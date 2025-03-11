@@ -1,0 +1,181 @@
+
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.add-task {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.task-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.category-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  min-width: 120px;
+}
+
+.date-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  min-width: 120px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.category-section {
+  margin-bottom: 30px;
+}
+
+.category-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.progress-container {
+  flex: 1;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #666;
+  min-width: 80px;
+  text-align: right;
+}
+
+.task-list {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  flex: 1;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-text {
+  font-size: 16px;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-due-date {
+  font-size: 12px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.task-due-date.overdue {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.delete-button:hover {
+  background-color: rgba(211, 47, 47, 0.1);
+}
+
+.empty-category {
+  color: #888;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+}
