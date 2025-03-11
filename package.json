@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
