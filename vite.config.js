@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
   },
-  base: './' // This ensures assets are loaded correctly on GitHub Pages
+  base: '/todo_list/', 
 })
