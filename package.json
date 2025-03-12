@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A simple and intuitive Todo application built with React",
-  "homepage": "https://leshast683.github.io/todo-app",
+  "homepage": "https://leshast683.github.io/todo_list/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
-    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
